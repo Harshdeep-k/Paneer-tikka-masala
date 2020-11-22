@@ -5,10 +5,10 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var crumpledPaper,base;
 var bin;
-var im;
+var image;
 function preload()
 {
-	im=loadImage("dustbingreen.png");
+	image=loadImage("dustbingreen.png");
 }
 function setup() {
 	createCanvas(windowWidth,windowHeight);
@@ -18,7 +18,6 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-
 	
 	base=new ground(width/2,height,width,20);
 	crumpledPaper=new paper();
